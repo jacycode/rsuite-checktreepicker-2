@@ -26,7 +26,6 @@ const propTypes = {
 	onSearch: PropTypes.func,
 	onToggle: PropTypes.func,
 	didMount: PropTypes.func,
-	onFilterNodes: PropTypes.func,
 	renderPlaceholder: PropTypes.func
 };
 
@@ -285,9 +284,6 @@ class Dropdown extends Component {
 
 		didMount && didMount(values);
 	}
-	handleFilterNodes = (nodes, values)=>{
-		return this.props.onFilterNodes(nodes, values);
-	}
 
 	renderDropdownMenu() {
 		const {
@@ -296,7 +292,8 @@ class Dropdown extends Component {
 			dropup
 		} = this.state;
 		const {
-			searchable
+			searchable,
+			filterNode,
 		} = this.props;
 		const classes = classNames('dropdown', {
 			'menu-dropup': dropup,
@@ -318,7 +315,7 @@ class Dropdown extends Component {
         onSelect={this.handleSelect}
         onExpand={this.handleExpand}
         didMount={this.handleDidMount}
-        filterNodes={this.handleFilterNodes}
+        filterNode={filterNode}
       />
 		);
 

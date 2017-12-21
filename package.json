@@ -1,6 +1,6 @@
 {
   "name": "rsuite-checktreepicker-2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Rsuite Check Tree Picker",
   "main": "lib/index.js",
   "directories": {
@@ -55,7 +55,7 @@
     "prop-types": "^15.5.10",
     "react-addons-css-transition-group": "^15.6.0",
     "rsuite-check-tree": "^0.2.2-beta.12",
-    "rsuite-check-tree-2": "0.0.6",
+    "rsuite-check-tree-2": "0.0.7",
     "rsuite-intl": "^1.0.1"
   },
   "peerDependencies": {
