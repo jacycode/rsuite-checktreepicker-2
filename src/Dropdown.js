@@ -26,6 +26,7 @@ const propTypes = {
 	onSearch: PropTypes.func,
 	onToggle: PropTypes.func,
 	didMount: PropTypes.func,
+	filterNode: PropTypes.func,
 	renderPlaceholder: PropTypes.func
 };
 
