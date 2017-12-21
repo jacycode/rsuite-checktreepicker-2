@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import CheckTree from 'rsuite-check-tree';
+import CheckTree from 'rsuite-check-tree-2';
 import classNames from 'classnames';
 import { on } from 'dom-lib';
 import { IntlProvider, FormattedMessage } from 'rsuite-intl';
@@ -184,9 +184,10 @@ class Dropdown extends Component {
   /**
    * 选择树节点后的回调函数
    */
-  handleSelect = (activeNode, layer, values) => {
+  handleSelect = (activeNode, layer, values, isChecked) => {
+  	//console.log('---', isChecked);
     const { onSelect } = this.props;
-    onSelect && onSelect(activeNode, layer, values);
+    onSelect && onSelect(activeNode, layer, values, isChecked);
   }
 
   /**
