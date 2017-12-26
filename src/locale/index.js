@@ -1,4 +1,4 @@
 export default {
   placeholder: 'Please Select',
-  searchPlaceholder: 'Search'
+  searchPlaceholder: '搜索',
 };

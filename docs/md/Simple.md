@@ -28,9 +28,13 @@ class SimplePicker extends React.Component {
             console.log(activeNode, layer);
           }}
           filterNode={(nodeData)=>{
-          	if(nodeData.value=='Dave'){
-          		nodeData.check = false;
-          	}
+          	console.log('filterNode');
+          }}
+          filterNodes={(nodeDatas)=>{
+          	console.log('filterNodes');
+          }}
+          filterNodesDeep={(nodeDatas)=>{
+          	console.log('filterNodesDeep');
           }}
         />
         <br />

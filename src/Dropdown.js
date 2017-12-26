@@ -27,6 +27,8 @@ const propTypes = {
 	onToggle: PropTypes.func,
 	didMount: PropTypes.func,
 	filterNode: PropTypes.func,
+	filterNodes: PropTypes.func,
+	filterNodesDeep: PropTypes.func,
 	renderPlaceholder: PropTypes.func
 };
 
@@ -295,6 +297,8 @@ class Dropdown extends Component {
 		const {
 			searchable,
 			filterNode,
+			filterNodes,
+			filterNodesDeep,
 		} = this.props;
 		const classes = classNames('dropdown', {
 			'menu-dropup': dropup,
@@ -317,6 +321,8 @@ class Dropdown extends Component {
         onExpand={this.handleExpand}
         didMount={this.handleDidMount}
         filterNode={filterNode}
+        filterNodes={filterNodes}
+        filterNodesDeep={filterNodesDeep}
       />
 		);
 
